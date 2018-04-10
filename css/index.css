@@ -188,7 +188,7 @@ hr {
 }
 
 #footerwrap {
-    background: url(../img/mint.jpg) no-repeat center top;
+    background: url(../img/mint.jpg) repeat-y center top;
     color: #fff;
     padding-top: 80px;
     padding-bottom: 60px;
@@ -418,3 +418,8 @@ hr {
     box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 1), inset -1px -1px 1px rgba(0, 0, 0, 1);
     background-color: #468674;
 }
+
+.btn-clickable:hover {
+    cursor: pointer;
+    background-color: transparent;
+} 
