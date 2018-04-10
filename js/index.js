@@ -71,7 +71,7 @@ gnMenu.prototype = {
     _initEvents: function () {
         var self = this;
 
-        if (!mobilecheck()) {
+        //if (!mobilecheck()) {
             this.trigger.addEventListener('mouseenter', function (ev) { self._openIconMenu(); });
             this.trigger.addEventListener('mouseleave', function (ev) { self._closeIconMenu(); });
 
@@ -89,7 +89,7 @@ gnMenu.prototype = {
             this.menu.addEventListener('touchend', function (ev) {
                 self._closeMenu();
             });
-        }
+        //}
         this.trigger.addEventListener(this.eventtype, function (ev) {
             ev.stopPropagation();
             ev.preventDefault();
