@@ -195,16 +195,13 @@ hr {
     text-align: left;
 }
 
-#footerwrap h4 {
+#footerwrap a {
     font-size: 18px;
     color: #fff;
-    background-color: transparent;
 }
 
-#footerwrap p {
+#footerwrap h4 {
     color: #fff;
-    background-color: transparent;
-    font-size: 18px;
 }
 
 #footerwrap .skill-icon {
@@ -408,4 +405,16 @@ hr {
     cursor: pointer;
     color: #fff;
     background-color: #16a085;
+}
+
+.btn-clickable {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 1), inset -1px -1px 1px rgba(0, 0, 0, 1);
+    background-color: #468674;
 }
