@@ -86,7 +86,9 @@ gnMenu.prototype = {
             this.menu.addEventListener('click', function (ev) {
                 self._closeMenu();
             });
-
+            this.menu.addEventListener('touchend', function (ev) {
+                self._closeMenu();
+            });
         }
         this.trigger.addEventListener(this.eventtype, function (ev) {
             ev.stopPropagation();
