@@ -49,7 +49,7 @@ function mobilecheck() {
     return false;
 }
 
-function gnMenu(el, options) {
+function gnMenu(el) {
     this.el = el;
     this._init();
 }
@@ -71,33 +71,32 @@ gnMenu.prototype = {
     _initEvents: function () {
         var self = this;
 
-        if (!mobilecheck()) {
-            this.trigger.addEventListener('mouseenter', function (ev) { self._openIconMenu(); });
-            this.trigger.addEventListener('mouseleave', function (ev) { self._closeIconMenu(); });
+        this.trigger.addEventListener('mouseenter', function (ev) { self._openIconMenu(); });
+        this.trigger.addEventListener('mouseleave', function (ev) { self._closeIconMenu(); });
 
-            this.menu.addEventListener('mouseenter', function (ev) {
-                self._openMenu();
-                document.addEventListener(self.eventtype, self.bodyClickFn);
-            });
-            this.menu.addEventListener('mouseleave', function (ev) {
-                self._closeMenu();
-                document.addEventListener(self.eventtype, self.bodyClickFn);
-            });
-            this.menu.addEventListener('click', function (ev) {
-                self._closeMenu();
-            });
-        }
+        this.menu.addEventListener('mouseenter', function (ev) {
+            self._openMenu();
+            document.addEventListener(self.eventtype, self.bodyClickFn);
+        });
+        this.menu.addEventListener('mouseleave', function (ev) {
+            self._closeMenu();
+            document.addEventListener(self.eventtype, self.bodyClickFn);
+        });
+        this.menu.addEventListener('click', function (ev) {
+            self._closeMenu();
+        }); 
+        
         this.trigger.addEventListener(this.eventtype, function (ev) {
-            ev.stopPropagation();
-            ev.preventDefault();
-            if (self.isMenuOpen) {
-                self._closeMenu();
-                document.removeEventListener(self.eventtype, self.bodyClickFn);
-            }
-            else {
-                self._openMenu();
-                document.addEventListener(self.eventtype, self.bodyClickFn);
-            }
+        ev.stopPropagation();
+        ev.preventDefault();
+        if (self.isMenuOpen) {
+            self._closeMenu();
+            document.removeEventListener(self.eventtype, self.bodyClickFn);
+        }
+        else {
+            self._openMenu();
+            document.addEventListener(self.eventtype, self.bodyClickFn);
+        }
         });
         this.menu.addEventListener(this.eventtype, function (ev) { ev.stopPropagation(); });
     },
