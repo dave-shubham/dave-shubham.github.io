@@ -15,7 +15,7 @@ function moveToElement(elementName) {
     var offset = $(elementId).offset();
     var navMenuBar = $("#gn-menu").css("height");
     offset = offset.top - navMenuBar.substr(0, navMenuBar.indexOf("px"));
-    $('html, body').animate({ scrollTop: offset }, 'slow');
+    $('html, body').animate({ scrollTop: offset }, 1000);
     return false;
 };
 
