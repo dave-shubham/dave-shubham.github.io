@@ -420,3 +420,7 @@ hr {
     cursor: pointer;
     background-color: transparent;
 }
+
+.btn-clickable:focus {
+    background-color: #468674;
+}
