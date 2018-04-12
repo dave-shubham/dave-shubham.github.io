@@ -86,17 +86,10 @@ hr {
 
 #workexwrap {
     background-color: #bcdcd3;
-    padding-top: 50px;
+    padding-top: 15px;
     min-height: 400px;
     width: 100%;
     background-size: cover;
-}
-
-#workexwrap h3 {
-    font-size: 40px;
-    color: #000;
-    background-color: transparent;
-    text-align: center;
 }
 
 #workexwrap h4 {
@@ -105,18 +98,11 @@ hr {
 
 #toolwrap {
     background-color: #bcdcd3;
-    padding-top: 50px;
+    padding-top: 15px;
     text-align: center;
-    min-height: 400px;
+    min-height: 250px;
     width: 100%;
     background-size: cover;
-}
-
-#toolwrap h3 {
-    font-size: 40px;
-    color: #000;
-    background-color: transparent;
-    text-align: center;
 }
 
 #testimonial {
@@ -144,8 +130,8 @@ hr {
 #acadwrap {
     background: url(../img/mint.jpg) repeat-y center top;
     color: #fff;
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     text-align: left;
 }
 
@@ -167,10 +153,6 @@ hr {
     padding-bottom: 40px;
     text-align: center;
     width: 100%;
-}
-
-#aboutwrap h3 {
-    font-size: 35px;
 }
 
 #aboutwrap p {
@@ -215,7 +197,7 @@ hr {
     display: inline;
     padding-top: 3%;
     margin-left: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 [id^=map] {
@@ -423,4 +405,9 @@ hr {
 
 .btn-clickable:focus {
     background-color: #468674;
+}
+
+#academics, #projects, #certifications{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
