@@ -70,7 +70,7 @@ hr {
 }
 
 .modal-title {
-    color: #fff;
+    color: #000;
     background-color: transparent;
 }
 
@@ -418,4 +418,4 @@ hr {
 .btn-clickable:hover {
     cursor: pointer;
     background-color: transparent;
-} 
+}
