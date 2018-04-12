@@ -13,7 +13,8 @@ function moveToElement(elementName) {
     var href = elementName.href;
     var elementId = "#" + href.substring(href.lastIndexOf("#") + 1);
     var offset = $(elementId).offset();
-    offset = offset.top;
+    var navMenuBar = $("#gn-menu").css("height");
+    offset = offset.top - navMenuBar.substr(0, navMenuBar.indexOf("px"));
     $('html, body').animate({ scrollTop: offset }, 'slow');
     return false;
 };
