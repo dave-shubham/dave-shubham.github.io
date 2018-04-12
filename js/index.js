@@ -2,6 +2,11 @@
 //    interval: 5000
 //})
 
+$(document).ready(function () {
+    $("#homeLink").css("display", "none");
+    $("#move-top").css("display", "none");
+});
+
 function checkNullUndefinedOrEmpty(value) {
     if (value == undefined || value == null || value == "") {
         return true;
@@ -64,6 +69,29 @@ function gnMenu(el) {
     this.el = el;
     this._init();
 }
+
+document.addEventListener('scroll', function () {
+    var currentTop = document.scrollingElement.scrollTop;
+    if (currentTop > 100)
+    {
+        if ($("#homeLink").css("display") == "none")
+        {
+            $("#homeLink").css("display", "block");
+        }
+        if ($("#move-top").css("display") == "none") {
+            $("#move-top").css("display", "block");
+        }
+    }
+    else
+    {
+        if ($("#homeLink").css("display") == "block") {
+            $("#homeLink").css("display", "none");
+        }
+        if ($("#move-top").css("display") == "block") {
+            $("#move-top").css("display", "none");
+        }
+    }
+});
 
 gnMenu.prototype = {
     _init: function () {

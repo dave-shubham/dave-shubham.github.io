@@ -29,18 +29,18 @@
                 <nav class="gn-menu-wrapper">
                     <div class="gn-scroller">
                         <ul class="gn-menu">
-                            <li><a href="#home" onclick="moveToElement(this)" class="gn-icon gn-icon-home">Home</a></li>
-                            <li><a href="#about" onclick="moveToElement(this)" class="gn-icon gn-icon-pencil">About</a></li>
-                            <li><a href="#workexcert" onclick="moveToElement(this)" class="gn-icon gn-icon-article">Work Experience & Certifications</a></li>
-                            <li><a href="#acadProjects" onclick="moveToElement(this)" class="gn-icon gn-icon-laptop">Academics & Projects</a></li>
-                            <li><a href="#tooltech" onclick="moveToElement(this)" class="gn-icon gn-icon-cog">Tools & Technologies</a></li>
-                            <!--<li><a href="#testimonial" onclick="moveToElement(this)" class="gn-icon gn-icon-article">Testimonial</a></li>-->
-                            <li><a href="#contact" onclick="moveToElement(this)" class="gn-icon gn-icon-envelop">Contact</a></li>
+                            <li id="homeLink"><a href="#home" onclick="moveToElement(this)" class="gn-icon gn-icon-home">Home</a></li>
+                            <li id="aboutLink"><a href="#about" onclick="moveToElement(this)" class="gn-icon gn-icon-pencil">About</a></li>
+                            <li id="workLink"><a href="#workexcert" onclick="moveToElement(this)" class="gn-icon gn-icon-article">Work Experience & Certifications</a></li>
+                            <li id="acadLink"><a href="#acadProjects" onclick="moveToElement(this)" class="gn-icon gn-icon-laptop">Academics & Projects</a></li>
+                            <li id="toolLink"><a href="#tooltech" onclick="moveToElement(this)" class="gn-icon gn-icon-cog">Tools & Technologies</a></li>
+                            <!--<li id="homeLink"><a href="#testimonial" onclick="moveToElement(this)" class="gn-icon gn-icon-article">Testimonial</a></li>-->
+                            <li id="contactLink"><a href="#contact" onclick="moveToElement(this)" class="gn-icon gn-icon-envelop">Contact</a></li>
                         </ul>
                     </div><!-- /gn-scroller -->
                 </nav>
             </li>
-            <li><a href="#home" onclick="moveToElement(this)">Move to top</a></li>
+            <li id="move-top"><a  href="#home" onclick="moveToElement(this)">Move to top</a></li>
         </ul>
     </div><!-- /container -->
     <!-- ========== HEADER SECTION ========== -->
@@ -89,7 +89,7 @@
     <div id="aboutwrap">
         <div class="container">
             <div class="col-lg-12">
-                <h1 class="text-center">Few words about me</h1>
+                <h1 class="text-center">About me</h1>
                 <p>
                     As a firm believer of “Learning is forever”, I continuously pursue knowledge and augment my skills.
                     My primary expertise is backend development and mangement including DB Administration and Data Warehousing.
