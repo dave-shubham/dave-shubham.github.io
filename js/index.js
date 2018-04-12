@@ -95,8 +95,12 @@ gnMenu.prototype = {
         });
         this.menu.addEventListener('click', function (ev) {
             self._closeMenu();
+        });
+        document.addEventListener('scroll', function (ev) {
+            self._closeMenu();
         }); 
-        
+
+
         this.trigger.addEventListener(this.eventtype, function (ev) {
         ev.stopPropagation();
         ev.preventDefault();
