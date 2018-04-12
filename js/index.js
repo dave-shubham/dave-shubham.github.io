@@ -2,11 +2,6 @@
 //    interval: 5000
 //})
 
-$(document).ready(function () {
-    $("#homeLink").css("display", "none");
-    $("#move-top").css("display", "none");
-});
-
 function checkNullUndefinedOrEmpty(value) {
     if (value == undefined || value == null || value == "") {
         return true;
