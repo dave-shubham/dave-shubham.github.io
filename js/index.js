@@ -32,13 +32,24 @@ function initMap() {
 
     var myUGradLocation = { lat: 23.129832, lng: 72.541336 };
     var mapUGrad = new google.maps.Map(document.getElementById('map-ugrad'), {
-        zoom: 12,
+        zoom: 15,
         center: myUGradLocation
     });
     var markerUGrad = new google.maps.Marker({
         position: myUGradLocation,
         animation: google.maps.Animation.DROP,
         map: mapUGrad
+    });
+
+    var myMAQLocation = { lat: 19.112739, lng: 72.870059 };
+    var mapMAQ = new google.maps.Map(document.getElementById('map-maq'), {
+        zoom: 15,
+        center: myMAQLocation
+    });
+    var markerMAQ = new google.maps.Marker({
+        position: myMAQLocation,
+        animation: google.maps.Animation.DROP,
+        map: mapMAQ
     });
 };
 

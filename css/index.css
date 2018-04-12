@@ -91,9 +91,27 @@ hr {
     background-size: cover;
 }
 
-#foliowrap {
+#workexwrap {
     background-color: #bcdcd3;
-    margin-top: 30px;
+    padding-top: 50px;
+    min-height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+#workexwrap h3 {
+    font-size: 40px;
+    color: #000;
+    background-color: transparent;
+    text-align: center;
+}
+
+#workexwrap h4 {
+    color: #fff;
+}
+
+#toolwrap {
+    background-color: #bcdcd3;
     padding-top: 50px;
     text-align: center;
     min-height: 400px;
@@ -101,11 +119,69 @@ hr {
     background-size: cover;
 }
 
-#foliowrap h3 {
+#toolwrap h3 {
     font-size: 40px;
     color: #000;
     background-color: transparent;
     text-align: center;
+}
+
+#testimonial {
+    background: url(../img/mint.jpg) no-repeat center top;
+    padding-top: 80px;
+    text-align: center;
+    min-height: 440px;
+    width: 100%;
+    background-size: cover;
+}
+
+#testimonial h1 {
+    color: #fff;
+    font-size: 38px;
+    background-color: transparent;
+}
+
+#testimonial h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+#acadwrap {
+    background: url(../img/mint.jpg) repeat-y center top;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-align: left;
+}
+
+#acadwrap h4 {
+    color: #fff;
+}
+
+#acadwrap .skill-icon {
+    width: 45%;
+}
+
+#acadwrap ul {
+    color: #000;
+    background-color: transparent;
+}
+
+#aboutwrap {
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+#aboutwrap h3 {
+    font-size: 35px;
+}
+
+#aboutwrap p {
+    text-align: justify;
+    font-size: 18px;
 }
 
 .intro {
@@ -154,28 +230,6 @@ hr {
     color: transparent;
 }
 
-#testimonial {
-    background: url(../img/mint.jpg) no-repeat center top;
-    padding-top: 80px;
-    text-align: center;
-    min-height: 440px;
-    width: 100%;
-    background-size: cover;
-}
-
-#testimonial h1 {
-    color: #fff;
-    font-size: 38px;
-    background-color: transparent;
-}
-
-#testimonial h2 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    background-color: transparent;
-}
-
 .contact-icons {
     margin-top: 5%;
     margin-left: 20%;
@@ -187,62 +241,9 @@ hr {
     height:0;
 }
 
-#footerwrap {
-    background: url(../img/mint.jpg) repeat-y center top;
-    color: #fff;
-    padding-top: 80px;
-    padding-bottom: 60px;
-    text-align: left;
-}
-
 .btn-acad a {
     font-size: 18px;
     color: #fff;
-}
-
-#footerwrap h4 {
-    color: #fff;
-}
-
-#footerwrap .skill-icon {
-    width: 45%;
-}
-
-#footerwrap ul {
-    color: #000;
-    background-color: transparent;
-}
-
-.about {
-    padding-top: 40px;
-    text-align: center;
-    width:100%;
-}
-
-.about h3 {
-    font-size: 35px;
-}
-
-.about h4 {
-    font-size: 20px;
-    text-align: left;
-}
-
-.about h5 {
-    font-size: 14px;
-    color: #bebdbd;
-    background-color:transparent;
-    font-weight: 700;
-}
-
-.about p {
-    text-align: justify;
-    font-size: 18px;
-}
-
-#chartwrap {
-    width: 100%;
-    text-align: center;
 }
 
 .label {
