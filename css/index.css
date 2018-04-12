@@ -5,6 +5,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     color: #555;
+    margin:0;
 }
 
 h1,
@@ -51,14 +52,6 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-}
-
-.displayInlineBlock {
-    display:inline-block;
-}
-
-.floatLeft {
-    float:left;
 }
 
 .valueBox {
@@ -171,6 +164,7 @@ hr {
 
 #aboutwrap {
     padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     width: 100%;
 }
