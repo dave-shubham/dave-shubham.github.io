@@ -92,9 +92,10 @@
 
 .gn-menu-wrapper {
     position: fixed;
-    top: 60px;
+    top: 0px;
     bottom: 0;
     left: 0;
+    z-index: 100;
     overflow: hidden;
     width: 60px;
     border-top: 1px solid #16a085;
