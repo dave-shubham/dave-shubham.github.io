@@ -13,9 +13,17 @@ function moveToElement(elementName) {
     var href = elementName.href;
     var elementId = "#" + href.substring(href.lastIndexOf("#") + 1);
     var offset = $(elementId).offset();
+    var currentTopValue = document.scrollingElement.scrollTop;
     var navMenuBar = $("#gn-menu").css("height");
     offset = offset.top - navMenuBar.substr(0, navMenuBar.indexOf("px"));
-    $('html, body').animate({ scrollTop: offset }, 1000);
+    if (Math.abs(currentTopValue - offset) < 100)
+    {
+        $('html, body').animate({ scrollTop: offset }, 10000);
+    }
+    else
+    {
+        $('html, body').animate({ scrollTop: offset }, 1000);
+    }
     return false;
 };
 
