@@ -56,13 +56,13 @@
     display: block;
     float: left;
     height: 100%;
-    /*border-left: 1px solid #16a085;
-    border-right: 1px solid #16a085;*/
+    border-left: 1px solid #16a085;
+    border-right: 1px solid #16a085;
     text-align: center
 }
 
 .gn-menu-main li.gn-trigger {
-    position: fixed;
+    position: relative;
     width: 60px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
