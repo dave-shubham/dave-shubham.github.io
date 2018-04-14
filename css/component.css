@@ -93,10 +93,11 @@
 .gn-menu-wrapper {
     position: fixed;
     top: 60px;
-    bottom: 0;
+    /*bottom: 0;*/
     left: 0;
     overflow: hidden;
     width: 60px;
+    height: inherit;
     border-top: 1px solid #16a085;
     background: #1abc9c;
     -webkit-transform: translateX(-60px);
