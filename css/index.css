@@ -200,17 +200,21 @@ hr {
     margin-bottom: 3%;
 }
 
+.contact-icon {
+    width: 10%;
+    display: inline;
+    margin: 3%;
+}
+
+.contact-icons {
+    margin-top: 5%;
+}
+
 [id^=map] {
     width: 100%;
     height: 400px;
     background-color: grey;
     color: transparent;
-}
-
-.contact-icons {
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 .attributions {
