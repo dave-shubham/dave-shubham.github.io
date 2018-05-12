@@ -2,6 +2,8 @@
 //    interval: 5000
 //})
 
+var toolDiv = $("#toolwrap");
+
 function createSkillBar() {
     $('.skill-bar').each(function () {
         var element = $(this).find('.skill-percent');
@@ -18,7 +20,7 @@ function createSkillBar() {
     });
 }
 
-$(document).ready(function () {
+toolDiv.mouseenter(function () {
     createSkillBar();
 });
 
