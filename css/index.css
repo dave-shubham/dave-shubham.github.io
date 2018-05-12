@@ -160,6 +160,10 @@ hr {
     font-size: 18px;
 }
 
+#contactwrap {
+    min-height: 400px;
+}
+
 .intro {
     opacity: 0.7;
     background-color: white;
