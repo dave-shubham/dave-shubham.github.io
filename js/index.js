@@ -2,6 +2,26 @@
 //    interval: 5000
 //})
 
+function createSkillBar() {
+    $('.skill-bar').each(function () {
+        var element = $(this).find('.skill-percent');
+        element.css("width", "0%");
+        element.html("");
+        var percentValue = $(this).attr('data-percent');
+        element.animate({
+            width: percentValue
+        }, 4000, function () {
+            var elementHTML = "<span style='color:white; font-size:75%;'>" + percentValue + "</span>"
+            element.html(elementHTML);
+        });
+        
+    });
+}
+
+$(document).ready(function () {
+    createSkillBar();
+});
+
 function checkNullUndefinedOrEmpty(value) {
     if (value == undefined || value == null || value == "") {
         return true;
@@ -23,6 +43,9 @@ function moveToElement(elementName) {
     else
     {
         $('html, body').animate({ scrollTop: offset }, 1000);
+    }
+    if (elementId == "#tooltech") {
+        createSkillBar();
     }
     return false;
 };

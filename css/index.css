@@ -192,12 +192,14 @@ hr {
     margin-right: 2%;
 }
 
-.skill-icon {
-    width: 10%;
-    display: inline;
-    padding-top: 3%;
-    margin-left: 5%;
-    margin-bottom: 3%;
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-percent {
+    background-color: #468674;
+    height: 25px;
+    width: 5%;
 }
 
 .contact-icon {
