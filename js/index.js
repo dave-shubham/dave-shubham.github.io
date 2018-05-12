@@ -20,6 +20,11 @@ function createSkillBar() {
     });
 }
 
+$(document).ready(function () {
+    createSkillBar();
+});
+
+
 toolDiv.mouseenter(function () {
     createSkillBar();
 });
