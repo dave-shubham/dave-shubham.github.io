@@ -149,8 +149,7 @@ hr {
 }
 
 #aboutwrap {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 3%;
     text-align: center;
     width: 100%;
 }
@@ -431,3 +430,10 @@ hr {
     white-space: normal;
     vertical-align: middle;
 }
+
+.img-profile {
+    width: 60%;
+    margin-left: 20%;
+    border: 1px #468674 solid;
+}
+
