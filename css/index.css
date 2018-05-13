@@ -128,7 +128,7 @@ hr {
 }
 
 #acadwrap {
-    background: url(../img/mint.jpg) repeat-y center top;
+    background: url(../img/mint.jpg) repeat center top;
     color: #fff;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -420,4 +420,14 @@ hr {
 #academics, #projects, #certifications{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.table-responsive > .table > thead > tr > th,
+.table-responsive > .table > tbody > tr > th,
+.table-responsive > .table > tfoot > tr > th,
+.table-responsive > .table > thead > tr > td,
+.table-responsive > .table > tbody > tr > td,
+.table-responsive > .table > tfoot > tr > td {
+    white-space: normal;
+    vertical-align: middle;
 }
