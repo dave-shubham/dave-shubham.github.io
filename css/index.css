@@ -409,7 +409,10 @@ hr {
 
 .btn-clickable:hover {
     cursor: pointer;
-    background-color: transparent;
+    z-index: 50;
+    transform: scale(1.15, 1.15);
+    background-color: #468674;
+    position:relative;
 }
 
 .btn-clickable:focus {
