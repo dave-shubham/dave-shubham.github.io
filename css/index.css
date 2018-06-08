@@ -149,6 +149,7 @@ hr {
 }
 
 #aboutwrap {
+    overflow:auto;
     padding: 3%;
     text-align: center;
     width: 100%;
