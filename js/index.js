@@ -2,6 +2,10 @@
 //    interval: 5000
 //})
 
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+
 var toolDiv = $("#toolwrap");
 
 function createSkillBar() {
