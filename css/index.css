@@ -149,8 +149,9 @@ hr {
 }
 
 #aboutwrap {
-    overflow:auto;
-    padding: 3%;
+    overflow: auto;
+    padding-bottom: 10%;
+    padding-top: 10%;
     text-align: center;
     width: 100%;
 }
@@ -450,4 +451,11 @@ hr {
     z-index: 9999;
     background: url('../img/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
     opacity: .8;
+}
+
+@media (min-width: 1440px) {
+    #aboutwrap {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
 }

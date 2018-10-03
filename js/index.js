@@ -16,7 +16,7 @@ function createSkillBar() {
         var percentValue = $(this).attr('data-percent');
         element.animate({
             width: percentValue
-        }, 4000, function () {
+        }, 500, function () {
             var elementHTML = "<span style='color:white; font-size:75%;'>" + percentValue + "</span>"
             element.html(elementHTML);
         });
