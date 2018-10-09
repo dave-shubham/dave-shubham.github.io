@@ -23,6 +23,7 @@ h6 {
 p {
     line-height: 28px;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 a {
@@ -150,15 +151,18 @@ hr {
 
 #aboutwrap {
     overflow: auto;
-    padding-bottom: 10%;
-    padding-top: 10%;
     text-align: center;
     width: 100%;
 }
 
 #aboutwrap p {
-    text-align: justify;
-    font-size: 18px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#aboutwrap h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #contactwrap {
@@ -437,7 +441,7 @@ hr {
 }
 
 .img-profile {
-    width: 60%;
+    width: 55%;
     margin-left: 20%;
     border: 1px #468674 solid;
 }
@@ -455,7 +459,11 @@ hr {
 
 @media (min-width: 1440px) {
     #aboutwrap {
-        padding-top: 4%;
-        padding-bottom: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #aboutwrap p {
+        margin: 0px;
     }
 }
