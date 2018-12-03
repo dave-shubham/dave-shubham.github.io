@@ -127,11 +127,10 @@ hr {
     background-size: cover;
 }
 
-#workexcertwrap h4 {
-    color: black;
-    opacity: 0.6;
-    font-size: larger;
-}
+    #workexcertwrap h4 {
+        color: #555;
+        font-weight: bold;
+    }
 
 #toolwrap {
     background-color: white;
@@ -165,16 +164,14 @@ hr {
 
 #acadwrap {
     background-color: lightblue;
-    color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: left;
 }
 
     #acadwrap h4 {
-        color: black;
-        opacity: 0.6;
-        font-size: larger;
+        color: #555;
+        font-weight: bold;
     }
 
     #acadwrap .skill-icon {
@@ -229,7 +226,7 @@ hr {
     height: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
-    min-height: 200px;
+    min-height: 180px;
 }
 
 .intro-name {
@@ -256,6 +253,25 @@ hr {
     width: 7%;
     display: inline;
     margin: 2%;
+}
+
+.intro-icon:hover {
+    transform: scale(1.10, 1.10);
+}
+
+.border-bar {
+    height: 6px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: transparent;
+    transition: 1.5s cubic-bezier(0, 0, 0, 1);
+    min-width: 0%;
+    max-width: 95%;
+}
+
+.border-bar.bottom {
+    float:right;
+    margin-bottom:6px;
 }
 
 .skill-name {
@@ -370,6 +386,8 @@ hr {
 
 #navMenuToggleIcon {
     border: 1px darkgray solid;
+    /*transition: 1s;
+    transform: rotateZ(0deg);*/
 }
 
     #move-top:hover, #navMenuToggleIcon:hover {
@@ -377,6 +395,11 @@ hr {
         border: 1px rgba(255,255,255,1.0) solid;
         border-radius: 4px;
     }
+
+    /*#navMenuToggleIcon:hover {
+        transition: 1s;
+        transform: rotateZ(180deg) scale(0.75, 0.75);
+    }*/
 
 #navbarSupportedContent {
     position: fixed;
@@ -465,11 +488,56 @@ hr {
 }
 
 #typeWriterIntro {
-    font-size: 50px;
-    font-weight: bold;
     margin-top: 1%;
     margin-bottom: 1%;
     height: 75px;
+}
+
+.header-text {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+
+.apparateLetters span {
+    opacity: 0;
+    animation: animateOverlay 1s ease-in-out forwards;
+}
+
+    .apparateLetters span:nth-child(5n+1) {
+        animation-delay: 0.5s;
+    }
+
+    .apparateLetters span:nth-child(5n) {
+        animation-delay: 1s;
+    }
+    
+    .apparateLetters span:nth-child(5n+2) {
+        animation-delay: 1.5s;
+    }
+
+    .apparateLetters span:nth-child(5n+4) {
+        animation-delay: 2s;
+    }
+
+    .apparateLetters span:nth-child(5n+3) {
+        animation-delay: 2.5s;
+    }
+
+@keyframes animateOverlay {
+    to {
+        opacity: 1;
+    }
 }
 
 @media (min-width: 768px) {

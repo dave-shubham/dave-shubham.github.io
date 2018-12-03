@@ -3,12 +3,12 @@
 //})
 
 var toolDiv = $("#toolwrap");
-var introDiv = $("#aboutwrap");
+var typeWriterIntroDiv = $("#typeWriterIntro");
 var introDivCounter = 0;
 var introWordCounter = 0;
 var introWordSpeed = 500;
 var introWordText = "";
-var introDivText = ["Hello!", "Hola!", "Howdy!"];
+var introDivText = ["Hello!", "Namaste!", "Hola!", "Howdy!", "Guten Tag!", "Bonjour!", "Olà!", "Merhaba!", "Ciao!"];
 
 function type() {
     if (introWordCounter < introWordText.length) {
@@ -40,7 +40,7 @@ function createSkillBar() {
         element.animate({
             width: percentValue
         }, 750, function () {
-            var elementHTML = "<span style='color:#50433B; font-size:110%;'>" + percentValue + "</span>"
+            var elementHTML = "<span style='color:#50433B; font-size:110%; font-weight: bold;'>" + percentValue + "</span>"
             element.html(elementHTML);
         });
     });
@@ -54,16 +54,72 @@ function updateProgressBar() {
     element.css("width", percentValue);
 }
 
+function fillIntroBar() {
+    var topBar = $('.border-bar.up');
+    var bottomBar = $('.border-bar.bottom');
+    var initialValue = "0%", finalValue = "100%";
+    topBar.css("background-color", "#50433B");
+    bottomBar.css("background-color", "#50433B");
+    topBar.css("width", initialValue);
+    bottomBar.css("width", initialValue);
+    topBar.css("width", finalValue);
+    bottomBar.css("width", finalValue);
+}
+
+function clearIntroBar() {
+    var topBar = $('.border-bar.up');
+    var bottomBar = $('.border-bar.bottom');
+    var initialValue = "100%", finalValue = "0%";
+    topBar.css("width", initialValue);
+    bottomBar.css("width", initialValue);
+    topBar.css("width", finalValue);
+    bottomBar.css("width", finalValue);
+    topBar.css("background-color", "transparent");
+    bottomBar.css("background-color", "transparent");
+}
+
+function apparatingLetters() {
+    var elementArray = $(".apparateLetters");
+    elementArray.removeClass("invisible");
+    for (var index = 0; index < elementArray.length; index++) {
+        var element = elementArray[index];
+        //element.removeClass("invisible");
+        var elementContent = element.innerText;
+        var html = "";
+        for (var index2 = 0; index2 < elementContent.length; index2++) {
+            if (elementContent[index2] == " ") {
+                html += elementContent[index2];
+            }
+            else {
+                html += "<span>" + elementContent[index2] + "</span>";
+            }
+        }
+        element.innerHTML = html;
+    }
+}
+
 $(document).ready(function () {
-    createSkillBar();
-    checkReturnToTop();
-    typeWriter();
-    updateProgressBar();
+    $(".loader").fadeOut(800, function () {
+        apparatingLetters();
+        createSkillBar();
+        checkReturnToTop();
+        typeWriter();
+        updateProgressBar();
+        fillIntroBar();
+    });
 });
 
 
 toolDiv.mouseenter(function () {
     createSkillBar();
+});
+
+$(".intro").mouseenter(function () {
+    clearIntroBar();
+});
+
+$(".intro").mouseleave(function () {
+    fillIntroBar();
 });
 
 function checkNullUndefinedOrEmpty(value) {
@@ -150,4 +206,4 @@ document.addEventListener('click', function () {
     isNavBarOpen();
 });
 
-setInterval(typeWriter, 5000);
+setInterval(typeWriter, 6000);
