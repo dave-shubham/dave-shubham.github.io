@@ -83,7 +83,6 @@ function apparatingLetters() {
     elementArray.removeClass("invisible");
     for (var index = 0; index < elementArray.length; index++) {
         var element = elementArray[index];
-        //element.removeClass("invisible");
         var elementContent = element.innerText;
         var html = "";
         for (var index2 = 0; index2 < elementContent.length; index2++) {
@@ -96,6 +95,13 @@ function apparatingLetters() {
         }
         element.innerHTML = html;
     }
+}
+
+function reanimateApparition() {
+    var el = $(".apparateLetters");
+    el.removeClass("apparateLetters").fadeOut(500, function () {
+        el.fadeIn(500).addClass("apparateLetters");
+    });
 }
 
 $(document).ready(function () {
@@ -115,6 +121,7 @@ toolDiv.mouseenter(function () {
 });
 
 $(".intro").mouseenter(function () {
+    reanimateApparition();
     clearIntroBar();
 });
 
@@ -139,6 +146,9 @@ function moveToElement(goToElementName) {
     $(elementId).addClass('active');
     if (elementId == "#tooltech") {
         createSkillBar();
+    }
+    else if (elementId == "#home") {
+        reanimateApparition();
     }
     return false;
 };

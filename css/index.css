@@ -224,9 +224,8 @@ hr {
     background-color: white;
     color: transparent;
     height: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    min-height: 180px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .intro-name {
@@ -271,7 +270,7 @@ hr {
 
 .border-bar.bottom {
     float:right;
-    margin-bottom:6px;
+    margin-bottom: 6px;
 }
 
 .skill-name {
