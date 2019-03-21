@@ -3,6 +3,8 @@
 //})
 
 var toolDiv = $("#toolwrap");
+var workexDiv = $("#workexcertwrap");
+var acadDiv = $("#acadwrap");
 var typeWriterIntroDiv = $("#typeWriterIntro");
 var introDivCounter = 0;
 var introWordCounter = 0;
@@ -112,9 +114,30 @@ $(document).ready(function () {
         typeWriter();
         updateProgressBar();
         fillIntroBar();
+        if (isElementInView(workexDiv)) {
+            slideUp(workexDiv);
+        }
+        if (isElementInView(acadDiv)) {
+            slideUp(acadDiv);
+        }
     });
 });
 
+function slideUp(divObject) {
+    headerDivObjects = divObject.find(".header-text");
+    buttonObjects = divObject.find(".btn-tabs");
+
+    if (headerDivObjects.hasClass("slideUp") == false) {
+        headerDivObjects.addClass("slideUp");
+    }
+    if (buttonObjects.hasClass("slideUp") == false) {
+        buttonObjects.addClass("slideUp");
+    }
+}
+
+function isElementInView(elem) {
+    return ($(window).scrollTop() + $(window).height() >= elem.offset().top);
+}
 
 toolDiv.mouseenter(function () {
     createSkillBar();
@@ -136,6 +159,28 @@ function checkNullUndefinedOrEmpty(value) {
     return false;
 }
 
+function reloadAnimations(elementName) {
+    switch (elementName) {
+        case "tooltech": {
+            createSkillBar();
+            break;
+        }
+        case "home": {
+            reanimateApparition();
+            break;
+        }
+        case "workexcert": {
+            slideUp(workexDiv);
+            break;
+        }
+        case "acadProjects": {
+            slideUp(workexDiv);
+            slideUp(acadDiv);
+            break;
+        }
+    }
+}
+
 function moveToElement(goToElementName) {
     var elementId = "#" + goToElementName;
     var offset = $(elementId).offset();
@@ -144,12 +189,6 @@ function moveToElement(goToElementName) {
     $('html, body').animate({ scrollTop: offset }, 1000);
     $("#navbarSupportedContent").children().find('.active').removeClass('active');
     $(elementId).addClass('active');
-    if (elementId == "#tooltech") {
-        createSkillBar();
-    }
-    else if (elementId == "#home") {
-        reanimateApparition();
-    }
     return false;
 };
 
@@ -206,7 +245,13 @@ function isNavBarOpen() {
     }
 }
 
-document.addEventListener('scroll', function () {
+$(window).scroll(function () {
+    if (isElementInView(workexDiv)) {
+        slideUp(workexDiv);
+    }
+    if (isElementInView(acadDiv)) {
+        slideUp(acadDiv);
+    }
     checkReturnToTop();
     isNavBarOpen();
     updateProgressBar();

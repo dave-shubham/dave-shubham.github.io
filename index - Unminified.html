@@ -31,9 +31,8 @@
         <div class="row">
             <nav class="navbar fixed-top navbar-dark bg-dark">
                 <div class="col-12 navbar-buttons">
-                    <button class="navbar-toggler-icon navbar-toggler" type="button" id="navMenuToggleIcon" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    </button>
-                    <button class="btn" type="button" aria-expanded="false" aria-label="Move to Top" id="move-top" style="visibility:hidden" onclick="moveToElement('home')">
+                    <button class="navbar-toggler-icon navbar-toggler" type="button" id="navMenuToggleIcon" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+                    <button class="btn" type="button" aria-expanded="false" aria-label="Move to Top" id="move-top" style="visibility:hidden" onclick="moveToElement('home'); reloadAnimations('home');">
                         Move to Top
                     </button>
                 </div>
@@ -46,7 +45,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item" id="homeLink">
-                        <a class="nav-link" onclick="moveToElement('home')">
+                        <a class="nav-link" onclick="moveToElement('home'); reloadAnimations('home');">
                             <i class="fas fa-home"></i>
                             <span class="nav-value">
                                 Home
@@ -54,7 +53,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="aboutLink">
-                        <a class="nav-link" onclick="moveToElement('about')">
+                        <a class="nav-link" onclick="moveToElement('about'); reloadAnimations('about');">
                             <i class="fas fa-id-card"></i>
                             <span class="nav-value">
                                 About Me
@@ -62,7 +61,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="workexcertLink">
-                        <a class="nav-link" onclick="moveToElement('workexcert')">
+                        <a class="nav-link" onclick="moveToElement('workexcert'); reloadAnimations('workexcert');">
                             <i class="fas fa-desktop"></i>
                             <span class="nav-value">
                                 Work Experience & Certifications
@@ -70,7 +69,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="acadProjectsLink">
-                        <a class="nav-link" onclick="moveToElement('acadProjects')">
+                        <a class="nav-link" onclick="moveToElement('acadProjects'); reloadAnimations('acadProjects');">
                             <i class="fas fa-book"></i>
                             <span class="nav-value">
                                 Academics & Projects
@@ -78,7 +77,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="tooltechLink">
-                        <a class="nav-link" onclick="moveToElement('tooltech')">
+                        <a class="nav-link" onclick="moveToElement('tooltech'); reloadAnimations('tooltech');">
                             <i class="fas fa-toolbox"></i>
                             <span class="nav-value">
                                 Tools & Technologies
@@ -86,7 +85,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="contactLink">
-                        <a class="nav-link" onclick="moveToElement('contact')">
+                        <a class="nav-link" onclick="moveToElement('contact'); reloadAnimations('contact');">
                             <i class="fas fa-address-book"></i>
                             <span class="nav-value">
                                 Contact Me
@@ -105,36 +104,36 @@
             <div class="col-lg-6 offset-lg-3 col-sm-8 offset-sm-2">
                 <div class="intro">
                     <div class="border-bar up"></div>
-                        <div class="intro-content">
-                            <div class="intro-name apparateLetters invisible">Shubham Dave</div>
-                            <div class="intro-words apparateLetters invisible">Forever Learner. Self Starter. Zealous Developer</div>
-                            <div class="intro-icons">
-                                <a href="tel:+16823139204">
-                                    <img class="intro-icon img-responsive" src="img/social/phone.svg" alt="Mobile" title="Mobile">
-                                </a>
+                    <div class="intro-content">
+                        <div class="intro-name apparateLetters invisible">Shubham Dave</div>
+                        <div class="intro-words apparateLetters invisible">Forever Learner. Self Starter. Zealous Developer</div>
+                        <div class="intro-icons">
+                            <a href="tel:+16823139204">
+                                <img class="intro-icon img-responsive" src="img/social/phone.svg" alt="Mobile" title="Mobile">
+                            </a>
 
-                                <a href="https://github.com/dave-shubham">
-                                    <img class="intro-icon img-responsive" src="img/github-logo.svg" alt="Github" title="Github">
-                                </a>
-                                <a href="https://www.facebook.com/daveshubham2">
-                                    <img class="intro-icon img-responsive" src="img/facebook-logo.svg" alt="Facebook" title="Facebook">
-                                </a>
-                                <a href="https://www.linkedin.com/in/dave-shubham">
-                                    <img class="intro-icon img-responsive" src="img/linkedin-sign.svg" alt="LinkedIn" title="LinkedIn">
-                                </a>
-                                <a href="skype:dave.shubham?call">
-                                    <img class="intro-icon img-responsive" src="img/skype-logo.svg" alt="Skype" title="Skype">
-                                </a>
+                            <a href="https://github.com/dave-shubham">
+                                <img class="intro-icon img-responsive" src="img/github-logo.svg" alt="Github" title="Github">
+                            </a>
+                            <a href="https://www.facebook.com/daveshubham2">
+                                <img class="intro-icon img-responsive" src="img/facebook-logo.svg" alt="Facebook" title="Facebook">
+                            </a>
+                            <a href="https://www.linkedin.com/in/dave-shubham">
+                                <img class="intro-icon img-responsive" src="img/linkedin-sign.svg" alt="LinkedIn" title="LinkedIn">
+                            </a>
+                            <a href="skype:dave.shubham?call">
+                                <img class="intro-icon img-responsive" src="img/skype-logo.svg" alt="Skype" title="Skype">
+                            </a>
 
-                                <a href="mailto:dave.shubham@outlook.com?subject=Hi%20Shubham%20!">
-                                    <img class="intro-icon img-responsive" src="img/envelope.svg" alt="Email" title="Email">
-                                </a>
+                            <a href="mailto:dave.shubham@outlook.com?subject=Hi%20Shubham%20!">
+                                <img class="intro-icon img-responsive" src="img/envelope.svg" alt="Email" title="Email">
+                            </a>
 
-                                <a href="docs/Resume_Shubham.pdf" download>
-                                    <img class="intro-icon img-responsive" src="img/resume.svg" alt="Resume" title="Resume">
-                                </a>
-                            </div>
+                            <a href="docs/Resume_Shubham.pdf" download>
+                                <img class="intro-icon img-responsive" src="img/resume.svg" alt="Resume" title="Resume">
+                            </a>
                         </div>
+                    </div>
                     <div class="border-bar bottom"></div>
                 </div>
             </div>
@@ -150,28 +149,25 @@
             <div class="col-xl-3 col-lg-5">
                 <img class="img-profile img-responsive" src="img/my-pic.jpg" alt="My Photo" title="Shubham Dave">
             </div>
-            <div class="col-xl-9 col-lg-7">
+            <div class="col-xl-9 col-lg-7" style="text-align: justify;">
                 <p>
-                    Owing to my strong predilection for computers, I did my undergraduate degree in Information Technology from Nirma University.
+                    I am a passionate software developer on a mission to help my customers succeed and achieve their goals easily. I strongly believe in follow-through with my commitments and going the extra mile to ensure customer satisfaction.
                 </p>
                 <br />
                 <p>
-                    Subsequently, to understand the practical application of my learnings in real world, I worked at MAQ Software.
-                    Working in a diverse set of projects in Financial domain, I learnt about use of Business Intelligence
-                    in executive decision making to improve overall growth. While working in these projects, I found my affinity
-                    to creatively solve problems for customers with my strong analytical skills and having great impact in their performance.
+                    To warrant my success, I keep learning and augmenting my knowledge, be it through online courses, my peers or lifelong experiences. I attained bachelor’s degree in Information Technology with primary focus on Software Development at Nirma University, India. Having the right foundations, I joined MAQ Software LLC as Software Engineer to benefit the customers with my skills and make an impact in their business by developing Front End and Back End solutions.
                 </p>
                 <br />
                 <p>
-                    Currently, I am a graduate student at UT Dallas studying coursework in IT & Management with primary focus on Business Intelligence and Data Analytics.
+                    Working in IT Services industry, I understood the need to expand my knowledge to understand business and managerial aspects as well to serve the customer better. Naturally, I pursued master’s studies in IT & Management UT Dallas, with a focus on Business Intelligence and Data Analytics. As a staunch believer of “Learning never ends”, I have continued my learning via online courses on websites like Udemy and edX and completed multiple certifications from prestigious institutions like Google, Microsoft, HarvardX, etc. in different fields.
                 </p>
                 <br />
-                <p>    
-                    Besides my work-life, I am an avid reader and love cycling & rock climbing.
+                <p>
+                    Besides being a tech-nerd, I love meeting new people, reading anything and everything interesting, trying new food dishes, cycling and rock-climbing.
                 </p>
             </div>
         </div>
-        
+
     </div><!-- /container -->
 
     <section id="workexcert"></section>
@@ -185,7 +181,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a data-toggle="modal" href="#ptModal" class="btn-clickable">
                         <h4>
                             Lead Parking Enforcement Officer
@@ -236,7 +232,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a data-toggle="modal" href="#maqModal" class="btn-clickable">
                         <h4>
                             Software Engineer
@@ -244,7 +240,7 @@
                             <br />
                             MAQ Software Private Limited
                         </h4>
-                        
+
                     </a>
                 </div>
                 <div class="modal fade" id="maqModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -287,7 +283,7 @@
                                     </li>
                                     <li>
                                         Administered multiple roles and their data access by implementing database security and authentication measures
-                                    </li>                                    
+                                    </li>
                                     <li>
                                         Improved site load time by 50% by deploying the sites to content delivery networks (CDN)
                                     </li>
@@ -321,7 +317,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a href="https://academy.exceedlms.com/student/award/28571572" target="_blank" class="btn-clickable">
                         <h4>
                             Google Ads Mobile
@@ -331,7 +327,7 @@
                         </h4>
                     </a>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a href="https://academy.exceedlms.com/student/award/28477292" target="_blank" class="btn-clickable">
                         <h4>
                             Google Ads Search
@@ -341,7 +337,7 @@
                         </h4>
                     </a>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a href="https://academy.exceedlms.com/student/award/27566257" target="_blank" class="btn-clickable">
                         <h4>
                             Google Ads Fundamentals
@@ -351,7 +347,7 @@
                         </h4>
                     </a>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a href="https://www.youracclaim.com/badges/ad26cd03-b7e4-4610-88ba-9acdb1df2bce" target="_blank" class="btn-clickable">
                         <h4>
                             Solutions Associate - SQL 2016 Database Development
@@ -361,7 +357,7 @@
                         </h4>
                     </a>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a href="https://www.youracclaim.com/badges/2f6760ff-1fb5-4750-b5de-14d2af5f8062" target="_blank" class="btn-clickable">
                         <h4>
                             Solutions Expert - Data Management and Analytics
@@ -371,7 +367,7 @@
                         </h4>
                     </a>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a href="https://courses.edx.org/certificates/c257327e9be04c67a647bb1475f8f909" target="_blank" class="btn-clickable">
                         <h4>
                             PH525.1x: Statistics and R
@@ -381,7 +377,7 @@
                         </h4>
                     </a>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a href="https://www.udemy.com/certificate/UC-CKK75A0U/" target="_blank" class="btn-clickable">
                         <h4>
                             The Python Bible™ | Everything You Need to Program in Python
@@ -406,7 +402,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a data-toggle="modal" href="#gradModal" class="btn-clickable">
                         <h4>
                             Master of Science in IT & Management
@@ -506,7 +502,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a data-toggle="modal" href="#undergradModal" class="btn-clickable">
                         <h4>
                             Bachelor of Technology in Information Technology
@@ -618,7 +614,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a data-toggle="modal" href="#obModal" class="btn-clickable">
                         <h4>
                             Organizational Behaviour
@@ -700,7 +696,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a data-toggle="modal" href="#sapmModal" class="btn-clickable">
                         <h4>
                             Analysis and Improvement of Comet Cruiser System
@@ -764,7 +760,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a data-toggle="modal" href="#ugfinalModal" class=" btn-clickable">
                         <h4>
                             Emotion Based Music Player
@@ -832,7 +828,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-acad">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 btn-tabs">
                     <a data-toggle="modal" href="#datacomModal" class="btn-clickable">
                         <h4>
                             Search Functionality for Huffman Compressed Data
@@ -925,7 +921,6 @@
                                     </div>
                                 </td>
                             </tr>
-                            
                             <tr class="d-flex">
                                 <td class="col-xs-6 col-sm-4 white-space-normal text-center">
                                     <div class="skill-name">
@@ -945,14 +940,30 @@
                             <tr class="d-flex">
                                 <td class="col-xs-6 col-sm-4 white-space-normal text-center">
                                     <div class="skill-name">
+                                        Tableau 9 & 10
+                                    </div>
+                                </td>
+                                <td class="col-xs-6 col-sm-8 text-center ">
+                                    <div class="skill-bar" data-percent="55%">
+                                        <div class="skill-percent" style="width: 55%;">
+                                            <span style='color:#50433B; font-size:110%; font-weight: bold;'>
+                                                55%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="col-xs-6 col-sm-4 white-space-normal text-center">
+                                    <div class="skill-name">
                                         Power BI
                                     </div>
                                 </td>
                                 <td class="col-xs-6 col-sm-8 text-center ">
-                                    <div class="skill-bar" data-percent="50%">
-                                        <div class="skill-percent" style="width: 50%;">
+                                    <div class="skill-bar" data-percent="55%">
+                                        <div class="skill-percent" style="width: 55%;">
                                             <span style='color:#50433B; font-size:110%; font-weight: bold;'>
-                                                50%
+                                                55%
                                             </span>
                                         </div>
                                     </div>
@@ -969,6 +980,43 @@
                                         <div class="skill-percent" style="width: 30%;">
                                             <span style='color:#50433B; font-size:110%;'>
                                                 30%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td colspan="2" class="col-12 skill-name">
+                                    Back End
+                                </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="col-xs-6 col-sm-4 white-space-normal text-center">
+                                    <div class="skill-name">
+                                        T-SQL and SQL Server Management Studio
+                                    </div>
+                                </td>
+                                <td class="col-xs-6 col-sm-8 text-center ">
+                                    <div class="skill-bar" data-percent="85%">
+                                        <div class="skill-percent" style="width: 85%;">
+                                            <span style='color:#50433B; font-size:110%;'>
+                                                85%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="col-xs-6 col-sm-4 white-space-normal text-center">
+                                    <div class="skill-name">
+                                        SQL Server Integration Services
+                                    </div>
+                                </td>
+                                <td class="col-xs-6 col-sm-8 text-center ">
+                                    <div class="skill-bar" data-percent="75%">
+                                        <div class="skill-percent" style="width: 75%;">
+                                            <span style='color:#50433B; font-size:110%;'>
+                                                75%
                                             </span>
                                         </div>
                                     </div>
@@ -1014,7 +1062,7 @@
                             <tr class="d-flex">
                                 <td class="col-xs-6 col-sm-4 white-space-normal text-center">
                                     <div class="skill-name">
-                                        jQuery
+                                        JavaScript
                                     </div>
                                 </td>
                                 <td class="col-xs-6 col-sm-8 text-center ">
@@ -1028,21 +1076,16 @@
                                 </td>
                             </tr>
                             <tr class="d-flex">
-                                <td colspan="2" class="col-12 skill-name">
-                                    Back End and Service Layer
-                                </td>
-                            </tr>
-                            <tr class="d-flex">
                                 <td class="col-xs-6 col-sm-4 white-space-normal text-center">
                                     <div class="skill-name">
-                                        T-SQL and SQL Server Management Studio
+                                        jQuery
                                     </div>
                                 </td>
                                 <td class="col-xs-6 col-sm-8 text-center ">
-                                    <div class="skill-bar" data-percent="85%">
-                                        <div class="skill-percent" style="width: 85%;">
+                                    <div class="skill-bar" data-percent="65%">
+                                        <div class="skill-percent" style="width: 65%;">
                                             <span style='color:#50433B; font-size:110%;'>
-                                                85%
+                                                65%
                                             </span>
                                         </div>
                                     </div>
@@ -1051,23 +1094,7 @@
                             <tr class="d-flex">
                                 <td class="col-xs-6 col-sm-4 white-space-normal text-center">
                                     <div class="skill-name">
-                                        SQL Server Integration Services
-                                    </div>
-                                </td>
-                                <td class="col-xs-6 col-sm-8 text-center ">
-                                    <div class="skill-bar" data-percent="75%">
-                                        <div class="skill-percent" style="width: 75%;">
-                                            <span style='color:#50433B; font-size:110%;'>
-                                                75%
-                                            </span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="d-flex">
-                                <td class="col-xs-6 col-sm-4 white-space-normal text-center">
-                                    <div class="skill-name">
-                                        C#
+                                        AngularJS
                                     </div>
                                 </td>
                                 <td class="col-xs-6 col-sm-8 text-center ">
@@ -1120,7 +1147,7 @@
                             <tr class="d-flex">
                                 <td class="col-xs-6 col-sm-4 white-space-normal text-center">
                                     <div class="skill-name">
-                                        C
+                                        C#
                                     </div>
                                 </td>
                                 <td class="col-xs-6 col-sm-8 text-center ">
@@ -1132,7 +1159,7 @@
                                         </div>
                                     </div>
                                 </td>
-                            </tr> 
+                            </tr>
                         </tbody>
                     </table>
                 </div>

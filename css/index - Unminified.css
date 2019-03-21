@@ -20,7 +20,7 @@ h6 {
 }
 
 h4, .h4 {
-    font-size:18px;
+    font-size: 18px;
 }
 
 p {
@@ -96,11 +96,11 @@ hr {
     cursor: pointer;
 }
 
-.modal-header .fas:hover {
-    transition: 1s;
-    transform: rotateZ(180deg);
-    opacity: 1.0;
-}
+    .modal-header .fas:hover {
+        transition: 1s;
+        transform: rotateZ(180deg);
+        opacity: 1.0;
+    }
 
 .modal-footer {
     padding: 0.8rem;
@@ -259,9 +259,9 @@ hr {
     margin: 2%;
 }
 
-.intro-icon:hover {
-    transform: scale(1.10, 1.10);
-}
+    .intro-icon:hover {
+        transform: scale(1.10, 1.10);
+    }
 
 .border-bar {
     height: 6px;
@@ -273,10 +273,10 @@ hr {
     max-width: 95%;
 }
 
-.border-bar.bottom {
-    float:right;
-    margin-bottom: 6px;
-}
+    .border-bar.bottom {
+        float: right;
+        margin-bottom: 6px;
+    }
 
 .skill-name {
     font-weight: bold;
@@ -311,10 +311,14 @@ hr {
     height: 0px;
 }
 
-.btn-acad a {
-    font-size: 18px;
-    color: #fff;
+.btn-tabs {
+    opacity: 0;
 }
+
+    .btn-tabs a {
+        font-size: 18px;
+        color: #fff;
+    }
 
 .label {
     padding-bottom: 15px;
@@ -371,10 +375,10 @@ hr {
     border: 1px #ccc solid;
 }
 
-.btn-default:hover {
-    background-color: #50433B;
-    color: white;
-}
+    .btn-default:hover {
+        background-color: #50433B;
+        color: white;
+    }
 
 #move-top {
     float: right;
@@ -390,8 +394,6 @@ hr {
 
 #navMenuToggleIcon {
     border: 1px darkgray solid;
-    /*transition: 1s;
-    transform: rotateZ(0deg);*/
 }
 
     #move-top:hover, #navMenuToggleIcon:hover {
@@ -399,11 +401,6 @@ hr {
         border: 1px rgba(255,255,255,1.0) solid;
         border-radius: 4px;
     }
-
-    /*#navMenuToggleIcon:hover {
-        transition: 1s;
-        transform: rotateZ(180deg) scale(0.75, 0.75);
-    }*/
 
 #navbarSupportedContent {
     position: fixed;
@@ -429,7 +426,7 @@ hr {
     padding: 7px 7px;
     border: 1px #343a40 solid;
     background-color: #50433B !important;
-    min-height:66px;
+    min-height: 66px;
 }
 
 .navbar-buttons {
@@ -502,6 +499,10 @@ hr {
     font-weight: bold;
 }
 
+#acadwrap .header-text, #workexcertwrap .header-text {
+    opacity: 0;
+}
+
 .loader {
     position: fixed;
     left: 0px;
@@ -511,6 +512,23 @@ hr {
     z-index: 9999;
     background: url('../img/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
     opacity: .8;
+}
+
+.slideUp {
+    animation: slide-up 1s forwards;
+    animation-delay: 0.75s;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 .apparateLetters span {
@@ -525,7 +543,7 @@ hr {
     .apparateLetters span:nth-child(5n) {
         animation-delay: 1s;
     }
-    
+
     .apparateLetters span:nth-child(5n+2) {
         animation-delay: 1.5s;
     }
@@ -579,6 +597,7 @@ hr {
         width: 75%;
         margin-bottom: 1%;
     }
+
     .intro-name {
         font-size: 40px;
     }
@@ -596,15 +615,12 @@ hr {
     h1, .h1 {
         font-size: 2.0rem;
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .img-profile {
         width: 90%;
     }
-
-    
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
