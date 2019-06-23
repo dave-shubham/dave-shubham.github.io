@@ -1,8 +1,4 @@
-﻿//$('.carousel').carousel({
-//    interval: 5000
-//})
-
-var toolDiv = $("#toolwrap");
+﻿var toolDiv = $("#toolwrap");
 var workexDiv = $("#workexcertwrap");
 var acadDiv = $("#acadwrap");
 var typeWriterIntroDiv = $("#typeWriterIntro");
